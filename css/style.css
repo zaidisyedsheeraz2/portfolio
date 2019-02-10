@@ -1,0 +1,93 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+#nav_bar{
+	background-color: silver;
+	padding: 25px;
+	
+}
+li{
+	float: left;
+	text-align: left;
+
+}
+#backIgwithIntro{
+	background-image: url(https://stphilips.co.uk/app/uploads/2018/04/STP_Home_Hero4-1.jpg);
+	position: absolute;
+top: 0;
+min-width: 100%;
+/*min-height: 100%;*/
+background-size: cover;
+background-position: 50%;
+background-repeat: no-repeat;
+}
+#header{
+	background-image: url(images/bkg.png);
+	padding:25px;
+	text-align: center;
+}
+#home,#about,#contact,#projects,#experience,#skills,#myName{
+	 transition: transform .2s; /* Animation */
+}
+#home:hover{
+	  transform: scale(2.5); 
+}
+#about:hover{
+	  transform: scale(2.5); 
+}
+#contact:hover{
+	  transform: scale(2.5); 
+}
+#projects:hover{
+	  transform: scale(2.5); 
+}
+#experience:hover{
+	  transform: scale(2.5); 
+}
+#skills:hover{
+	  transform: scale(2.5); 
+}
+#myName:hover{
+	  transform: scale(1.5); 
+}
+#slider{
+	margin-top: 10px;
+}
+#header,#main_content::after{
+	clear: left;
+	content: "";
+	display: block;
+}
+#left,#right{
+	width: 50%;
+	float: left;
+	margin-top: 10px;
+	/*height: 450px;*/
+}
+#left{
+	
+	text-align: center;
+	
+}
+#bgi{
+	background-image: url(images/welcome.jpg);
+}
+#right{
+	
+	background-color: rgb(81, 199, 255);
+	text-align: center;
+}
+#footer{
+	background-color: #0e2739;
+	padding: 25px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+@media(max-width: 600px){
+	#header,#main_content,#left,#right,#content_left,#content_right{
+		width: 100%;
+		height: auto;
+	}
+}

@@ -1,0 +1,94 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+#nav_bar{
+	background-color: silver;
+	padding: 25px;
+	
+}
+li{
+	float: left;
+	text-align: left;
+
+}
+#cont_bkg{
+	background-image: url(images/contact_bkg.jpg);
+	background-repeat: no-repeat;
+	transform: translate3d(0px, 17px, 0px);
+	padding-top: 450px;
+	padding-bottom: 450px;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 100%;
+	background-size: 100% 100%;
+
+}
+#header{
+	background-image: url(images/bkg.png);
+	padding:25px;
+	text-align: center;
+
+}
+#home,#about,#contact,#projects,#experience,#skills,#myName{
+	 transition: transform .2s; /* Animation */
+	 color: rgb(255, 255, 255);
+}
+#home:hover{
+	  transform: scale(2.5); 
+}
+#about:hover{
+	  transform: scale(2.5); 
+}
+#contact:hover{
+	  transform: scale(2.5); 
+}
+#projects:hover{
+	  transform: scale(2.5); 
+}
+#experience:hover{
+	  transform: scale(2.5); 
+}
+#skills:hover{
+	  transform: scale(2.5); 
+}
+#myName:hover{
+	  transform: scale(1.5); 
+}
+#slider{
+	margin-top: 10px;
+}
+#header,#main_content::after{
+	clear: left;
+	content: "";
+	display: block;
+}
+#left,#right{
+	width: 50%;
+	float: left;
+	margin-top: 10px;
+	/*height: 450px;*/
+}
+#left{
+	
+	text-align: center;
+	
+}
+#right{
+	/*margin-top: 10%;*/
+	background-color: rgb(81, 199, 255);
+	text-align: center;
+}
+#footer{
+	background-color: lightgreen;
+	padding: 25px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+@media(max-width: 600px){
+	#header,#main_content,#left,#right,#content_left,#content_right{
+		width: 100%;
+		height: 100%;
+	}
+}
